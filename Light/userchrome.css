@@ -1,0 +1,127 @@
+/*****************************************************************************
+ * Styling for Light Theme                                                   *
+ *                                                                           *
+ * For styling the entire Joplin app (except the rendered Markdown,          *
+ * which is defined in `userstyle.css`)                                      *
+ *****************************************************************************/
+
+:root {
+	--editor-heading-color:              #333333; /* dark grey */
+	--editor-heading-font-weight:        bold;
+	--editor-heading-font-size:          1.1em;
+	--editor-code-color:                 #555555; /* medium grey */
+	--editor-text-in-brackets-color:     #333333; /* dark grey */
+	--editor-text-in-parens-color:       #777777; /* light grey */
+	--editor-strong-color:               #444444; /* very dark grey */
+	--editor-emphasis-color:             #444444; /* very dark grey */
+	--editor-emphasis-font-style:        italic;
+	--editor-list-element-color:         #006699; /* dark blue */
+	--editor-checkbox-color:             grey;
+	--editor-checkbox-checked-color:     #999999; /* medium grey */
+	--editor-selected-text-bgcolor:      #E8F0FE; /* very light blue */
+	--note-count-label-background-color: #f0f0f0; /* off white */
+	--note-count-label-box-shadow:       #d0d0d0; /* light grey shadow */
+}
+
+/*------ Editor: Headings ---------------------------------------------------*/
+.cm-header {
+	color: var(--editor-heading-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: inline code and codeblocks ---------------------------------*/
+pre.CodeMirror-line span[role="presentation"] span.cm-comment {
+	color: var(--editor-code-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: text in brackets [ ] ---------------------------------------*/
+.cm-link-text {
+	color: var(--editor-text-in-brackets-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: text/link in parens ( ) ------------------------------------*/
+.cm-string.cm-url  {
+	color: var(--editor-text-in-parens-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: strong -----------------------------------------------------*/
+.cm-strong {
+	color: var(--editor-strong-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: italics ----------------------------------------------------*/
+.cm-em {
+	color: var(--editor-emphasis-color) !important;
+	font-style: var(--editor-emphasis-font-style);
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: list elements and checkbox elements ------------------------*/
+.cm-variable-2, .cm-variable-3, .cm-keyword {
+	color: var(--editor-list-element-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: checkbox [ ] and [x] ---------------------------------------*/
+.cm-meta {
+	color: var(--editor-checkbox-checked-color) !important;
+}
+.cm-property {
+	color: var(--editor-checkbox-checked-color) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Editor: selected text background color -----------------------------*/
+.CodeMirror-selected {
+	background: var(--editor-selected-text-bgcolor) !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Notebook pane: Nicer note count label ------------------------------*/
+.note-count-label {
+	display: flex;
+	margin: 0 4px 0 auto;
+	padding: 0 6px;
+	background: var(--note-count-label-background-color);
+	border-radius: 8px;
+	box-shadow: 0 0 2px var(--note-count-label-box-shadow);
+	opacity: 1 !important;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Input fields: Search (global, local), Note Title -------------------*/
+input {
+	border-radius: 14px !important;
+	border: 1px solid #cccccc; /* lighter border */
+	outline: none;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Sync button --------------------------------------------------------*/
+/* Add button background, add rounded corners */
+div.resizableLayoutItem.rli-sideBar > div > div > div:nth-child(2) > button {
+	background-color: #f5f5f5 !important; /* light background */
+	border-radius: 16px !important;
+}
+
+/* Outline colour change on hover */
+div.resizableLayoutItem.rli-sideBar > div > div > div:nth-child(2) > button:hover {
+	border: 1px solid #abc4ff !important; /* light blue for hover border */
+	border-radius: 16px !important;
+}
+
+/* Prevent button text color changing on hover */
+div.resizableLayoutItem.rli-sideBar > div > div > div:nth-child(2) > button > span {
+	color: #333333 !important; /* dark text for contrast */
+}
+/*---------------------------------------------------------------------------*/
+
+/*------ Toolbar buttons ----------------------------------------------------*/
+/* Update to light theme icons for toolbar as required */
+/*---------------------------------------------------------------------------*/
+
+
