@@ -6,20 +6,20 @@
  *****************************************************************************/
 
 :root {
-	--editor-heading-color:              #333333; /* dark grey */
+	--editor-heading-color:              #00b3b3; /* dark cyan */
 	--editor-heading-font-weight:        bold;
 	--editor-heading-font-size:          1.1em;
-	--editor-code-color:                 #555555; /* medium grey */
-	--editor-text-in-brackets-color:     #333333; /* dark grey */
+	--editor-code-color:                 #5C9900; /* dark greenyellow */
+	--editor-text-in-brackets-color:     #A9960A; /* dark yellowish */
 	--editor-text-in-parens-color:       #777777; /* light grey */
-	--editor-strong-color:               #444444; /* very dark grey */
-	--editor-emphasis-color:             #444444; /* very dark grey */
+	--editor-strong-color:               #af5950; /* dark salmon */
+	--editor-emphasis-color:             #af5950; /* dark salmon */
 	--editor-emphasis-font-style:        italic;
 	--editor-list-element-color:         #006699; /* dark blue */
 	--editor-checkbox-color:             grey;
 	--editor-checkbox-checked-color:     #999999; /* medium grey */
 	--editor-selected-text-bgcolor:      #E8F0FE; /* very light blue */
-	--note-count-label-background-color: #f0f0f0; /* off white */
+	--note-count-label-background-color: none; /* no background */
 	--note-count-label-box-shadow:       #d0d0d0; /* light grey shadow */
 }
 
@@ -90,6 +90,7 @@ pre.CodeMirror-line span[role="presentation"] span.cm-comment {
 	border-radius: 8px;
 	box-shadow: 0 0 2px var(--note-count-label-box-shadow);
 	opacity: 1 !important;
+	color: var(--note-count-label-text-color);
 }
 /*---------------------------------------------------------------------------*/
 
